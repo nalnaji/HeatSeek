@@ -17,13 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yL3-he-HU5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="297"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-bc-CJU">
+                                <rect key="frame" x="0.0" y="295" width="231" height="297"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="thermalImageView" destination="yL3-he-HU5" id="jC5-8r-QLR"/>
+                        <outlet property="visualImageView" destination="YSQ-bc-CJU" id="Lwh-PN-gMu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

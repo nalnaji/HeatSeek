@@ -18,8 +18,11 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *thermalImageView; //for the UI
+@property (weak, nonatomic) IBOutlet UIImageView *visualImageView;
 @property (strong, nonatomic) UIImage *thermalImage;                //lates frame for video
+@property (strong, nonatomic) UIImage *visualImage;
 @property (strong, nonatomic) dispatch_queue_t renderQueue;
+@property (nonatomic) FLIROneSDKImageOptions options;
 
 @end
 
@@ -30,8 +33,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.renderQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
-    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
-
+    
+    self.options = FLIROneSDKImageOptionsBlendedMSXRGBA8888Image;
+    self.options = (FLIROneSDKImageOptions)(self.options ^ FLIROneSDKImageOptionsVisualJPEGImage);
+    [FLIROneSDKStreamManager sharedInstance].imageOptions = self.options;
+    
     [[FLIROneSDKSimulation sharedInstance] connectWithFrameBundleName:@"sampleframes_hq" withBatteryChargePercentage:@42];
 }
 
@@ -39,6 +45,20 @@
     //NSLog(@"DID RECEIVE didReceiveBlendedMSXRGBA8888Image");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         self.thermalImage = [FLIROneSDKUIImage imageWithFormat:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image andData:msxImage andSize:size];
+        [self updateUI];
+    });
+    
+}
+
+- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager didReceiveVisualJPEGImage:(NSData *)visualJPEGImage {
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        UIImage *rotatedJPEG = [FLIROneSDKUIImage imageWithFormat:FLIROneSDKImageOptionsVisualJPEGImage andData:visualJPEGImage andSize:CGSizeZero];
+        
+        self.visualImage = [[UIImage alloc]
+                                initWithCGImage:rotatedJPEG.CGImage
+                                scale:1.0
+                                orientation:UIImageOrientationRight];
         [self updateUI];
     });
     
@@ -52,6 +72,7 @@
 - (void) updateUI {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.thermalImageView setImage:self.thermalImage];
+        [self.visualImageView setImage:self.visualImage];
     });
 }
 
