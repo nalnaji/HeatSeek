@@ -19,6 +19,7 @@
 		7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */; };
 		7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */; };
 		7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */; };
+		76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
 		7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
 		76DD7ED0840DE2DB7C3F13A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = HeatSeek/sampleframes_hq.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7608214E1B3E869200B57C5D = {
 			isa = PBXGroup;
 			children = (
+				76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */,
 				760821591B3E869200B57C5D /* HeatSeek */,
 				760821731B3E869200B57C5D /* HeatSeekTests */,
 				760821581B3E869200B57C5D /* Products */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				760821661B3E869200B57C5D /* Main.storyboard in Resources */,
+				76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */,
 				7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */,
 				7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */,
 				760821681B3E869200B57C5D /* Images.xcassets in Resources */,
@@ -431,6 +435,7 @@
 					"$(PROJECT_DIR)/HeatSeek",
 				);
 				INFOPLIST_FILE = HeatSeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -447,6 +452,7 @@
 					"$(PROJECT_DIR)/HeatSeek",
 				);
 				INFOPLIST_FILE = HeatSeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

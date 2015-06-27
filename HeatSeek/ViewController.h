@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLIROneSDK/FLIROneSDK.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <FLIROneSDKImageReceiverDelegate, FLIROneSDKStreamManagerDelegate>
 
 
 @end
