@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68F40AC0B743CAAA0148536E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DD7ED0840DE2DB7C3F13A5 /* libPods.a */; };
+		7608215D1B3E869200B57C5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7608215C1B3E869200B57C5D /* main.m */; };
+		760821601B3E869200B57C5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7608215F1B3E869200B57C5D /* AppDelegate.m */; };
+		760821631B3E869200B57C5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760821621B3E869200B57C5D /* ViewController.m */; };
+		760821661B3E869200B57C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760821641B3E869200B57C5D /* Main.storyboard */; };
+		760821681B3E869200B57C5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760821671B3E869200B57C5D /* Images.xcassets */; };
+		7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760821691B3E869200B57C5D /* LaunchScreen.xib */; };
+		760821771B3E869200B57C5D /* HeatSeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 760821761B3E869200B57C5D /* HeatSeekTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		760821711B3E869200B57C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7608214F1B3E869200B57C5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760821561B3E869200B57C5D;
+			remoteInfo = HeatSeek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		598F8A6A83C5313D25B44C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		65C5328EC1C2524E44070623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		760821571B3E869200B57C5D /* HeatSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeatSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7608215B1B3E869200B57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7608215C1B3E869200B57C5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7608215E1B3E869200B57C5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7608215F1B3E869200B57C5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		760821611B3E869200B57C5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		760821621B3E869200B57C5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		760821651B3E869200B57C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		760821671B3E869200B57C5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7608216A1B3E869200B57C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		760821701B3E869200B57C5D /* HeatSeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatSeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		760821751B3E869200B57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760821761B3E869200B57C5D /* HeatSeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatSeekTests.m; sourceTree = "<group>"; };
+		76DD7ED0840DE2DB7C3F13A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760821541B3E869200B57C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F40AC0B743CAAA0148536E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7608216D1B3E869200B57C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7608214E1B3E869200B57C5D = {
+			isa = PBXGroup;
+			children = (
+				760821591B3E869200B57C5D /* HeatSeek */,
+				760821731B3E869200B57C5D /* HeatSeekTests */,
+				760821581B3E869200B57C5D /* Products */,
+				FFA972C7AA996ED6116DB9C9 /* Pods */,
+				D3BD5F3BF264B3131713C872 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		760821581B3E869200B57C5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760821571B3E869200B57C5D /* HeatSeek.app */,
+				760821701B3E869200B57C5D /* HeatSeekTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760821591B3E869200B57C5D /* HeatSeek */ = {
+			isa = PBXGroup;
+			children = (
+				7608215E1B3E869200B57C5D /* AppDelegate.h */,
+				7608215F1B3E869200B57C5D /* AppDelegate.m */,
+				760821611B3E869200B57C5D /* ViewController.h */,
+				760821621B3E869200B57C5D /* ViewController.m */,
+				760821641B3E869200B57C5D /* Main.storyboard */,
+				760821671B3E869200B57C5D /* Images.xcassets */,
+				760821691B3E869200B57C5D /* LaunchScreen.xib */,
+				7608215A1B3E869200B57C5D /* Supporting Files */,
+			);
+			path = HeatSeek;
+			sourceTree = "<group>";
+		};
+		7608215A1B3E869200B57C5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7608215B1B3E869200B57C5D /* Info.plist */,
+				7608215C1B3E869200B57C5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760821731B3E869200B57C5D /* HeatSeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				760821761B3E869200B57C5D /* HeatSeekTests.m */,
+				760821741B3E869200B57C5D /* Supporting Files */,
+			);
+			path = HeatSeekTests;
+			sourceTree = "<group>";
+		};
+		760821741B3E869200B57C5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760821751B3E869200B57C5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3BD5F3BF264B3131713C872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76DD7ED0840DE2DB7C3F13A5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA972C7AA996ED6116DB9C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65C5328EC1C2524E44070623 /* Pods.debug.xcconfig */,
+				598F8A6A83C5313D25B44C23 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760821561B3E869200B57C5D /* HeatSeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7608217A1B3E869200B57C5D /* Build configuration list for PBXNativeTarget "HeatSeek" */;
+			buildPhases = (
+				2CE195F1B27109FCE41E363E /* Check Pods Manifest.lock */,
+				760821531B3E869200B57C5D /* Sources */,
+				760821541B3E869200B57C5D /* Frameworks */,
+				760821551B3E869200B57C5D /* Resources */,
+				6F5BDD9D695A176747A0BDD2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeatSeek;
+			productName = HeatSeek;
+			productReference = 760821571B3E869200B57C5D /* HeatSeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7608216F1B3E869200B57C5D /* HeatSeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7608217D1B3E869200B57C5D /* Build configuration list for PBXNativeTarget "HeatSeekTests" */;
+			buildPhases = (
+				7608216C1B3E869200B57C5D /* Sources */,
+				7608216D1B3E869200B57C5D /* Frameworks */,
+				7608216E1B3E869200B57C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				760821721B3E869200B57C5D /* PBXTargetDependency */,
+			);
+			name = HeatSeekTests;
+			productName = HeatSeekTests;
+			productReference = 760821701B3E869200B57C5D /* HeatSeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7608214F1B3E869200B57C5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Naseem Al-Naji";
+				TargetAttributes = {
+					760821561B3E869200B57C5D = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					7608216F1B3E869200B57C5D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 760821561B3E869200B57C5D;
+					};
+				};
+			};
+			buildConfigurationList = 760821521B3E869200B57C5D /* Build configuration list for PBXProject "HeatSeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7608214E1B3E869200B57C5D;
+			productRefGroup = 760821581B3E869200B57C5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760821561B3E869200B57C5D /* HeatSeek */,
+				7608216F1B3E869200B57C5D /* HeatSeekTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760821551B3E869200B57C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760821661B3E869200B57C5D /* Main.storyboard in Resources */,
+				7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */,
+				760821681B3E869200B57C5D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7608216E1B3E869200B57C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE195F1B27109FCE41E363E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5BDD9D695A176747A0BDD2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760821531B3E869200B57C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760821631B3E869200B57C5D /* ViewController.m in Sources */,
+				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
+				7608215D1B3E869200B57C5D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7608216C1B3E869200B57C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760821771B3E869200B57C5D /* HeatSeekTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		760821721B3E869200B57C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760821561B3E869200B57C5D /* HeatSeek */;
+			targetProxy = 760821711B3E869200B57C5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		760821641B3E869200B57C5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760821651B3E869200B57C5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		760821691B3E869200B57C5D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7608216A1B3E869200B57C5D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760821781B3E869200B57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		760821791B3E869200B57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7608217B1B3E869200B57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C5328EC1C2524E44070623 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HeatSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7608217C1B3E869200B57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598F8A6A83C5313D25B44C23 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HeatSeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7608217E1B3E869200B57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HeatSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeatSeek.app/HeatSeek";
+			};
+			name = Debug;
+		};
+		7608217F1B3E869200B57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HeatSeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeatSeek.app/HeatSeek";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760821521B3E869200B57C5D /* Build configuration list for PBXProject "HeatSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760821781B3E869200B57C5D /* Debug */,
+				760821791B3E869200B57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7608217A1B3E869200B57C5D /* Build configuration list for PBXNativeTarget "HeatSeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7608217B1B3E869200B57C5D /* Debug */,
+				7608217C1B3E869200B57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7608217D1B3E869200B57C5D /* Build configuration list for PBXNativeTarget "HeatSeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7608217E1B3E869200B57C5D /* Debug */,
+				7608217F1B3E869200B57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7608214F1B3E869200B57C5D /* Project object */;
+}
