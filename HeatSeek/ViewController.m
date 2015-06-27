@@ -19,10 +19,19 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *thermalImageView; //for the UI
 @property (weak, nonatomic) IBOutlet UIImageView *visualImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
+
 @property (strong, nonatomic) UIImage *thermalImage;                //lates frame for video
 @property (strong, nonatomic) UIImage *visualImage;
+@property (strong, nonatomic) UIImage *photo;
+
+@property (nonatomic, strong) IBOutlet UIButton *capturePhotoButton;
+
 @property (strong, nonatomic) dispatch_queue_t renderQueue;
 @property (nonatomic) FLIROneSDKImageOptions options;
+
+@property (nonatomic) BOOL connected;
+
 
 @end
 
@@ -30,6 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.connected = NO;
     // Do any additional setup after loading the view, typically from a nib.
     self.renderQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
@@ -39,6 +49,8 @@
     [FLIROneSDKStreamManager sharedInstance].imageOptions = self.options;
     
     [[FLIROneSDKSimulation sharedInstance] connectWithFrameBundleName:@"sampleframes_hq" withBatteryChargePercentage:@42];
+    
+    [self updateUI];
 }
 
 - (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager didReceiveBlendedMSXRGBA8888Image:(NSData *)msxImage imageSize:(CGSize)size{
@@ -64,15 +76,32 @@
     
 }
 
+// TAKE PHOTO METHODS
+- (IBAction)capturePhoto:(id)sender {
+    self.photo = self.visualImage;
+    [self updateUI];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) FLIROneSDKDidConnect {
+    self.connected = YES;
+    [self updateUI];
 }
 
 - (void) updateUI {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.thermalImageView setImage:self.thermalImage];
         [self.visualImageView setImage:self.visualImage];
+        [self.photoView setImage:self.photo];
+        if(self.connected) {
+            [self.capturePhotoButton setEnabled:YES];
+        } else {
+            [self.capturePhotoButton setEnabled:NO];
+        }
     });
 }
 

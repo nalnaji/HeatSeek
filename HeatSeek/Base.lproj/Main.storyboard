@@ -22,10 +22,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-bc-CJU">
                                 <rect key="frame" x="0.0" y="295" width="231" height="297"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-Iv-qBG">
+                                <rect key="frame" x="233" y="0.0" width="140" height="189"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plg-4n-0aE">
+                                <rect key="frame" x="268" y="197" width="70" height="30"/>
+                                <state key="normal" title="Take Pic :)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEZ-6y-bew"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="capturePhotoButton" destination="plg-4n-0aE" id="jCv-rK-Yly"/>
+                        <outlet property="photoView" destination="lwq-Iv-qBG" id="Wxk-Xa-byE"/>
                         <outlet property="thermalImageView" destination="yL3-he-HU5" id="jC5-8r-QLR"/>
                         <outlet property="visualImageView" destination="YSQ-bc-CJU" id="Lwh-PN-gMu"/>
                     </connections>
