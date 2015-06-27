@@ -15,6 +15,10 @@
 		760821681B3E869200B57C5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760821671B3E869200B57C5D /* Images.xcassets */; };
 		7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760821691B3E869200B57C5D /* LaunchScreen.xib */; };
 		760821771B3E869200B57C5D /* HeatSeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 760821761B3E869200B57C5D /* HeatSeekTests.m */; };
+		7613A6AB1B3E950B005DBCD8 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AA1B3E950B005DBCD8 /* libstdc++.dylib */; };
+		7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */; };
+		7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */; };
+		7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		760821701B3E869200B57C5D /* HeatSeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatSeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		760821751B3E869200B57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760821761B3E869200B57C5D /* HeatSeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatSeekTests.m; sourceTree = "<group>"; };
+		7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7613A6AA1B3E950B005DBCD8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
+		7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
 		76DD7ED0840DE2DB7C3F13A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */,
+				7613A6AB1B3E950B005DBCD8 /* libstdc++.dylib in Frameworks */,
+				7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */,
 				68F40AC0B743CAAA0148536E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +114,8 @@
 		7608215A1B3E869200B57C5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */,
+				7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */,
 				7608215B1B3E869200B57C5D /* Info.plist */,
 				7608215C1B3E869200B57C5D /* main.m */,
 			);
@@ -129,6 +142,8 @@
 		D3BD5F3BF264B3131713C872 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */,
+				7613A6AA1B3E950B005DBCD8 /* libstdc++.dylib */,
 				76DD7ED0840DE2DB7C3F13A5 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -227,6 +242,7 @@
 			files = (
 				760821661B3E869200B57C5D /* Main.storyboard in Resources */,
 				7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */,
+				7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */,
 				760821681B3E869200B57C5D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,11 @@
 			baseConfigurationReference = 65C5328EC1C2524E44070623 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HeatSeek",
+				);
 				INFOPLIST_FILE = HeatSeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +441,11 @@
 			baseConfigurationReference = 598F8A6A83C5313D25B44C23 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HeatSeek",
+				);
 				INFOPLIST_FILE = HeatSeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
