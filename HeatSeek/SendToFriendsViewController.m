@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSMutableArray *friendsArray;
 @property (strong, nonatomic) NSString *serverURL;
 @property (strong, nonatomic) NSMutableArray *selectedRowsArray;
+@property (weak, nonatomic) IBOutlet UIButton *challengeButton;
 
 @property (nonatomic) BOOL sending;
 @end
@@ -79,6 +80,9 @@
     // Return the number of rows in the section.
     // If you're serving data from an array, return the length of the array:
     return [self.friendsArray count];
+}
+- (IBAction)challengeButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToChallengesSegue" sender: sender];
 }
 
 // Customize the appearance of table view cells.

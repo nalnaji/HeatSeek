@@ -24,6 +24,9 @@
 		7632FA691B3FD286006957BB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632FA681B3FD286006957BB /* User.m */; };
 		7632FA6C1B3FFB82006957BB /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7632FA6A1B3FFB82006957BB /* checked.png */; };
 		7632FA6D1B3FFB82006957BB /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7632FA6B1B3FFB82006957BB /* unchecked.png */; };
+		7632FA6F1B4029BA006957BB /* Coldest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7632FA6E1B4029BA006957BB /* Coldest.jpg */; };
+		7632FA751B404F44006957BB /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632FA741B404F44006957BB /* ChallengeTableViewController.m */; };
+		7632FA781B405B3D006957BB /* SubmitChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632FA771B405B3D006957BB /* SubmitChallengeViewController.m */; };
 		76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */; };
 		76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1351B3F9F24007307BD /* SnapViewController.m */; };
 		76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */; };
@@ -68,6 +71,11 @@
 		7632FA681B3FD286006957BB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		7632FA6A1B3FFB82006957BB /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
 		7632FA6B1B3FFB82006957BB /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		7632FA6E1B4029BA006957BB /* Coldest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Coldest.jpg; sourceTree = "<group>"; };
+		7632FA731B404F44006957BB /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewController.h; sourceTree = "<group>"; };
+		7632FA741B404F44006957BB /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewController.m; sourceTree = "<group>"; };
+		7632FA761B405B3D006957BB /* SubmitChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitChallengeViewController.h; sourceTree = "<group>"; };
+		7632FA771B405B3D006957BB /* SubmitChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitChallengeViewController.m; sourceTree = "<group>"; };
 		76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
 		76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
 		76D2D1341B3F9F24007307BD /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapViewController.h; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 				7608215A1B3E869200B57C5D /* Supporting Files */,
 				76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */,
 				76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */,
+				7632FA6E1B4029BA006957BB /* Coldest.jpg */,
 				7607D4801B3F95B3002787A6 /* HomeViewController.h */,
 				7607D4811B3F95B3002787A6 /* HomeViewController.m */,
 				76D2D1341B3F9F24007307BD /* SnapViewController.h */,
@@ -146,6 +155,10 @@
 				76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */,
 				7632FA671B3FD286006957BB /* User.h */,
 				7632FA681B3FD286006957BB /* User.m */,
+				7632FA731B404F44006957BB /* ChallengeTableViewController.h */,
+				7632FA741B404F44006957BB /* ChallengeTableViewController.m */,
+				7632FA761B405B3D006957BB /* SubmitChallengeViewController.h */,
+				7632FA771B405B3D006957BB /* SubmitChallengeViewController.m */,
 			);
 			path = HeatSeek;
 			sourceTree = "<group>";
@@ -279,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7632FA6F1B4029BA006957BB /* Coldest.jpg in Resources */,
 				760821661B3E869200B57C5D /* Main.storyboard in Resources */,
 				76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */,
 				7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */,
@@ -339,7 +353,9 @@
 				760821631B3E869200B57C5D /* ViewController.m in Sources */,
 				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
 				7632FA691B3FD286006957BB /* User.m in Sources */,
+				7632FA751B404F44006957BB /* ChallengeTableViewController.m in Sources */,
 				76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */,
+				7632FA781B405B3D006957BB /* SubmitChallengeViewController.m in Sources */,
 				7607D4821B3F95B3002787A6 /* HomeViewController.m in Sources */,
 				76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */,
 				76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */,

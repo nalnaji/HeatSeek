@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIImageView *homeImageView;
+@property (weak, nonatomic) IBOutlet UIButton *challengeButton;
 
 @end
 
@@ -30,6 +31,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)challengeButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToChallengesSegue" sender: sender];
 }
 
 /*

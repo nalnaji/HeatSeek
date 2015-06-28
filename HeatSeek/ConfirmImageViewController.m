@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *retakeButton;
 @property (weak, nonatomic) IBOutlet UIButton *continueButton;
+@property (weak, nonatomic) IBOutlet UIButton *challengeButton;
 
 @end
 
@@ -28,6 +29,9 @@
 }
 - (IBAction)continueButtonClicked:(id)sender {
     [self performSegueWithIdentifier:@"sendChallengeSegue" sender: sender];
+}
+- (IBAction)challengeButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToChallengesSegue" sender: sender];
 }
 
 - (void)didReceiveMemoryWarning {

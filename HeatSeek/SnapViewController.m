@@ -34,6 +34,7 @@
 
 @property (nonatomic) BOOL connected;
 @property (nonatomic) BOOL cameraBusy;
+@property (weak, nonatomic) IBOutlet UIButton *challengeButton;
 
 @end
 
@@ -140,6 +141,9 @@
             [self.capturePhotoButton setEnabled:NO];
         }
     });
+}
+- (IBAction)challengeButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToChallengesSegue" sender: sender];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

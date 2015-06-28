@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R4j-aK-T14">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -69,6 +68,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghp-Bj-b4m">
+                                <rect key="frame" x="359" y="20" width="76" height="30"/>
+                                <state key="normal" title="Challenges">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JzZ-0A-qPk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,9 +87,11 @@
                     </view>
                     <connections>
                         <outlet property="capturePhotoButton" destination="plg-4n-0aE" id="jCv-rK-Yly"/>
+                        <outlet property="challengeButton" destination="ghp-Bj-b4m" id="4Nf-4Z-feI"/>
                         <outlet property="tempLabel" destination="bfy-aP-6QS" id="tb8-Rs-Kqb"/>
                         <outlet property="thermalImageView" destination="yL3-he-HU5" id="jC5-8r-QLR"/>
                         <segue destination="EXi-09-2tv" kind="show" identifier="confirmImageSegue" id="lca-Kt-92A"/>
+                        <segue destination="ATx-Ju-B3a" kind="show" identifier="goToChallengesSegue" id="jNe-u6-lig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -128,6 +138,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="II9-2g-J46">
+                                <rect key="frame" x="465" y="40" width="76" height="30"/>
+                                <state key="normal" title="Challenges">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonClicked:" destination="EXi-09-2tv" eventType="touchUpInside" id="atY-eT-yiH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -137,10 +156,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="challengeButton" destination="II9-2g-J46" id="2gy-DN-zcp"/>
                         <outlet property="continueButton" destination="43J-JN-sEa" id="Rbu-ii-7ae"/>
                         <outlet property="imageView" destination="pBG-qi-5XJ" id="jeL-og-hnY"/>
                         <outlet property="retakeButton" destination="uQU-2x-qlv" id="0Jw-Yq-kQr"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="retakeSegue" id="2Z4-fR-8n7"/>
+                        <segue destination="ATx-Ju-B3a" kind="show" identifier="goToChallengesSegue" id="EIw-6h-JCf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rp0-dL-IBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -187,6 +208,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzS-8t-kb5">
+                                <rect key="frame" x="455" y="20" width="76" height="30"/>
+                                <state key="normal" title="Challenges">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonClicked:" destination="ele-oL-ePk" eventType="touchUpInside" id="5XU-oA-CTg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -195,9 +225,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="challengeButton" destination="BzS-8t-kb5" id="kKj-UT-8FI"/>
                         <outlet property="friendsTableView" destination="iq5-Fm-vwb" id="XBd-Tz-1xx"/>
                         <outlet property="sendButton" destination="NZb-P5-8Lb" id="Lcf-sH-aKf"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="afterSendSegue" id="f8j-a9-BH7"/>
+                        <segue destination="ATx-Ju-B3a" kind="show" identifier="goToChallengesSegue" id="ggQ-JR-1wl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bty-aO-CWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,13 +257,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-kz-EG6">
-                                <rect key="frame" x="551" y="28" width="42" height="30"/>
-                                <state key="normal" title="TOUR">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-dY-vNY">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-dY-vNY">
                                 <rect key="frame" x="29" y="28" width="45" height="30"/>
                                 <state key="normal" title="MENU">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,8 +266,8 @@
                                     <action selector="clickedMenuButton:" destination="tuZ-l5-YYO" eventType="touchUpInside" id="QmJ-fD-09U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-iq-I99">
-                                <rect key="frame" x="282" y="362" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-iq-I99">
+                                <rect key="frame" x="282" y="482" width="37" height="30"/>
                                 <state key="normal" title="PLAY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -250,40 +276,104 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="playGameSegue" id="XRv-vW-Swk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-kz-EG6">
+                                <rect key="frame" x="374" y="28" width="76" height="30"/>
+                                <state key="normal" title="Challenges">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonClicked:" destination="tuZ-l5-YYO" eventType="touchUpInside" id="Pof-zj-Pb9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="4me-Zv-g6W"/>
-                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="7uh-A1-iXu"/>
-                            <constraint firstItem="Emk-kz-EG6" firstAttribute="trailing" secondItem="2LE-Nd-xD2" secondAttribute="trailingMargin" constant="10" id="GOB-de-47o"/>
-                            <constraint firstAttribute="centerY" secondItem="5hS-iq-I99" secondAttribute="centerY" id="HAA-iX-CEm"/>
-                            <constraint firstAttribute="centerY" secondItem="5hS-iq-I99" secondAttribute="centerY" id="M5u-Xg-Vs9"/>
-                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="UTd-u4-pcS"/>
-                            <constraint firstItem="vgF-dY-vNY" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="4" id="XKq-3v-AtM"/>
-                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="Y05-gb-P0g"/>
-                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="ay1-Nq-IIh"/>
-                            <constraint firstItem="vgF-dY-vNY" firstAttribute="leading" secondItem="2LE-Nd-xD2" secondAttribute="leadingMargin" constant="10" id="bgd-UX-90E"/>
-                            <constraint firstItem="vgF-dY-vNY" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="10" id="chJ-fs-JaU"/>
-                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="gqc-fk-ITM"/>
-                            <constraint firstAttribute="centerX" secondItem="DhC-fq-7bO" secondAttribute="centerX" id="kFc-m3-Js7"/>
-                            <constraint firstItem="Emk-kz-EG6" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="10" id="xFB-GB-hFS"/>
+                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="Wfu-3X-hOp"/>
+                            <constraint firstAttribute="centerX" secondItem="DhC-fq-7bO" secondAttribute="centerX" id="gf3-ie-fJF"/>
+                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="xmX-iI-gZC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="challengeButton" destination="Emk-kz-EG6" id="ENx-7x-U42"/>
                         <outlet property="homeImageView" destination="Gm1-V3-9CQ" id="a6P-jQ-84m"/>
                         <outlet property="menuButton" destination="vgF-dY-vNY" id="New-UN-c80"/>
                         <outlet property="playButton" destination="5hS-iq-I99" id="TBD-t1-Mfk"/>
+                        <segue destination="ATx-Ju-B3a" kind="show" identifier="goToChallengesSegue" id="8pd-tU-Yh4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fks-JA-gkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="451" y="132"/>
         </scene>
+        <!--Challenge Table View Controller-->
+        <scene sceneID="MnW-G4-zuy">
+            <objects>
+                <tableViewController id="ATx-Ju-B3a" customClass="ChallengeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FCl-d0-JYW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="op5-je-efw">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Challenges" id="ELS-YG-gEi">
+                                    <barButtonItem key="leftBarButtonItem" title="Send a challenge" id="Ifv-Z3-7Go">
+                                        <connections>
+                                            <action selector="cameraButtonClicked:" destination="ATx-Ju-B3a" id="kal-dA-lwe"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="takeImageSegue" id="TKp-yC-6il"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="challengeCell" id="L5l-QB-Zai">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L5l-QB-Zai" id="5tu-kT-Wa2">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ATx-Ju-B3a" id="NRg-MM-bcp"/>
+                            <outlet property="delegate" destination="ATx-Ju-B3a" id="YR0-xa-heP"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="cameraButton" destination="Ifv-Z3-7Go" id="H07-Kd-x59"/>
+                        <segue destination="ojJ-nz-Xcg" kind="show" identifier="submitChallengeSegue" id="tvA-sh-Re6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbH-Gb-w8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Item" id="9nd-T9-gcw"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="924"/>
+        </scene>
+        <!--Submit Challenge View Controller-->
+        <scene sceneID="FmK-Sc-vsI">
+            <objects>
+                <viewController id="ojJ-nz-Xcg" customClass="SubmitChallengeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g8e-fD-7P3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ka2-qD-y6W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JL9-6M-Vu5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pez-ru-Edk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="930"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Coldest.jpg" width="360" height="270"/>
+        <image name="Coldest.jpg" width="540" height="359"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f8j-a9-BH7"/>
+        <segue reference="TKp-yC-6il"/>
+        <segue reference="EIw-6h-JCf"/>
     </inferredMetricsTieBreakers>
 </document>
