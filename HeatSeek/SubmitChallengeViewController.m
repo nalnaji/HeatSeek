@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *guessInput;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIButton *toggleButton;
+@property (weak, nonatomic) IBOutlet UIImageView *congrats;
+
 @property int current;
 @end
 
@@ -44,6 +46,10 @@
     
     
     
+}
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.view endEditing:YES];
+    NSLog(@"dismiss");
 }
 - (IBAction)toggleClicked:(id)sender {
     if (self.current == 0) {
@@ -90,7 +96,8 @@
 - (IBAction)submitChallenge:(id)sender {
     [self.view endEditing:YES];
     if (abs([self.guessInput.text integerValue] - [[self.challengeInfo objectForKey:@"temperature"] integerValue]) < 5){
-         self.resultLabel.text = @"Correct!!!";
+         self.resultLabel.text = @"80";
+        [self.congrats setAlpha:1.0];
     }else {
         self.resultLabel.text = @"Wrong!!!";
     }
