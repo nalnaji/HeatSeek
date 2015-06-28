@@ -361,8 +361,74 @@
                     <view key="view" contentMode="scaleToFill" id="JL9-6M-Vu5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crW-N1-ga7">
+                                <rect key="frame" x="78" y="179" width="247" height="272"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IxD-0t-Tpm">
+                                <rect key="frame" x="228" y="112" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a guess" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfB-js-Mn7">
+                                <rect key="frame" x="78" y="116" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nep-Vp-v39">
+                                <rect key="frame" x="185" y="141" width="33" height="30"/>
+                                <state key="normal" title="Do it">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitChallenge:" destination="ojJ-nz-Xcg" eventType="touchUpInside" id="hcV-Dl-NdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-hV-JQc">
+                                <rect key="frame" x="56" y="39" width="39" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-oj-8qx">
+                                <rect key="frame" x="277" y="39" width="76" height="30"/>
+                                <state key="normal" title="Challenges">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonClicked:" destination="ojJ-nz-Xcg" eventType="touchUpInside" id="kwK-v0-sUk"/>
+                                    <action selector="challengesClicked:" destination="ojJ-nz-Xcg" eventType="touchUpInside" id="XSm-sD-SLn"/>
+                                    <action selector="toggleClicked:" destination="ojJ-nz-Xcg" eventType="touchUpInside" id="t6z-PB-jNq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-Fh-EMl">
+                                <rect key="frame" x="78" y="473" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-Rp-K9j">
+                                <rect key="frame" x="155" y="522" width="92" height="30"/>
+                                <state key="normal" title="Toggle Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleClicked:" destination="ojJ-nz-Xcg" eventType="touchUpInside" id="T4J-v1-Dek"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="guessInput" destination="IxD-0t-Tpm" id="bv0-KN-vtj"/>
+                        <outlet property="imageView" destination="crW-N1-ga7" id="GLP-wY-Ul3"/>
+                        <outlet property="resultLabel" destination="Rgj-Fh-EMl" id="lex-R2-XRY"/>
+                        <outlet property="submitButton" destination="nep-Vp-v39" id="Pb3-g2-tPT"/>
+                        <outlet property="toggleButton" destination="ahv-Rp-K9j" id="HO5-wa-bEh"/>
+                        <segue destination="ATx-Ju-B3a" kind="show" identifier="goToChallengesSegue" id="uwL-DK-Wci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pez-ru-Edk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,7 +439,7 @@
         <image name="Coldest.jpg" width="540" height="359"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uwL-DK-Wci"/>
         <segue reference="TKp-yC-6il"/>
-        <segue reference="EIw-6h-JCf"/>
     </inferredMetricsTieBreakers>
 </document>
