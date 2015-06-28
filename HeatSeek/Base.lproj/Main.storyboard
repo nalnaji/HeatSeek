@@ -26,7 +26,7 @@
                                 <rect key="frame" x="233" y="0.0" width="140" height="189"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plg-4n-0aE">
-                                <rect key="frame" x="268" y="197" width="70" height="30"/>
+                                <rect key="frame" x="268" y="252" width="70" height="30"/>
                                 <state key="normal" title="Take Pic :)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,12 +34,19 @@
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEZ-6y-bew"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-aP-6QS">
+                                <rect key="frame" x="282" y="206" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="capturePhotoButton" destination="plg-4n-0aE" id="jCv-rK-Yly"/>
                         <outlet property="photoView" destination="lwq-Iv-qBG" id="Wxk-Xa-byE"/>
+                        <outlet property="tempLabel" destination="bfy-aP-6QS" id="tb8-Rs-Kqb"/>
                         <outlet property="thermalImageView" destination="yL3-he-HU5" id="jC5-8r-QLR"/>
                         <outlet property="visualImageView" destination="YSQ-bc-CJU" id="Lwh-PN-gMu"/>
                     </connections>
