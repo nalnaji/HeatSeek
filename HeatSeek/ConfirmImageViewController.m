@@ -7,6 +7,7 @@
 //
 
 #import "ConfirmImageViewController.h"
+#import "SendToFriendsViewController.h"
 
 @interface ConfirmImageViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -25,20 +26,30 @@
 - (IBAction)retakeButtonClicked:(id)sender {
      [self performSegueWithIdentifier:@"retakeSegue" sender: sender];
 }
+- (IBAction)continueButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"sendChallengeSegue" sender: sender];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
+    if ([[segue identifier] isEqualToString:@"sendChallengeSegue"])
+    {
+        // Get reference to the destination view controller
+        SendToFriendsViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        [vc setThermalImage:[self thermalImage]];
+        [vc setVisualImage:[self visualImage]];
+        [vc setPhotoTemperature:[self photoTemperature]];
+        
+    }
     // Pass the selected object to the new view controller.
 }
-*/
 
 @end

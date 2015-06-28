@@ -24,6 +24,8 @@
     // Do any additional setup after loading the view.
     if ([FBSDKAccessToken currentAccessToken]) {
         // User is logged in, do work such as go to next view controller.
+        NSLog(@"GOOOO");
+        [self performSegueWithIdentifier:@"loggedInSegue" sender: self];
     }
     
     self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
@@ -44,6 +46,8 @@
 didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                 error:(NSError *)error {
     NSLog(@"Logged in");
+    NSString *tokenValue = [[FBSDKAccessToken currentAccessToken] tokenString];
+    NSLog(tokenValue);
     [self performSegueWithIdentifier:@"loggedInSegue" sender: loginButton];
 }
 

@@ -5,3 +5,5 @@ pod 'ObjectiveSugar'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
+
+pod 'AFNetworking', '~> 2.0'

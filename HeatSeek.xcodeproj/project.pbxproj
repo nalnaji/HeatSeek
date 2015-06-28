@@ -20,6 +20,10 @@
 		7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */; };
 		7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */; };
 		7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */; };
+		7632FA661B3FC075006957BB /* SendToFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632FA651B3FC075006957BB /* SendToFriendsViewController.m */; };
+		7632FA691B3FD286006957BB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632FA681B3FD286006957BB /* User.m */; };
+		7632FA6C1B3FFB82006957BB /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7632FA6A1B3FFB82006957BB /* checked.png */; };
+		7632FA6D1B3FFB82006957BB /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7632FA6B1B3FFB82006957BB /* unchecked.png */; };
 		76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */; };
 		76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1351B3F9F24007307BD /* SnapViewController.m */; };
 		76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */; };
@@ -58,6 +62,12 @@
 		7613A6AA1B3E950B005DBCD8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
 		7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
+		7632FA641B3FC075006957BB /* SendToFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendToFriendsViewController.h; sourceTree = "<group>"; };
+		7632FA651B3FC075006957BB /* SendToFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendToFriendsViewController.m; sourceTree = "<group>"; };
+		7632FA671B3FD286006957BB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7632FA681B3FD286006957BB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7632FA6A1B3FFB82006957BB /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		7632FA6B1B3FFB82006957BB /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
 		76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
 		76D2D1341B3F9F24007307BD /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapViewController.h; sourceTree = "<group>"; };
@@ -116,7 +126,11 @@
 			children = (
 				7608215E1B3E869200B57C5D /* AppDelegate.h */,
 				7608215F1B3E869200B57C5D /* AppDelegate.m */,
+				7632FA641B3FC075006957BB /* SendToFriendsViewController.h */,
+				7632FA651B3FC075006957BB /* SendToFriendsViewController.m */,
 				760821611B3E869200B57C5D /* ViewController.h */,
+				7632FA6A1B3FFB82006957BB /* checked.png */,
+				7632FA6B1B3FFB82006957BB /* unchecked.png */,
 				760821621B3E869200B57C5D /* ViewController.m */,
 				760821641B3E869200B57C5D /* Main.storyboard */,
 				760821671B3E869200B57C5D /* Images.xcassets */,
@@ -130,6 +144,8 @@
 				76D2D1351B3F9F24007307BD /* SnapViewController.m */,
 				76D2D1371B3FA31B007307BD /* ConfirmImageViewController.h */,
 				76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */,
+				7632FA671B3FD286006957BB /* User.h */,
+				7632FA681B3FD286006957BB /* User.m */,
 			);
 			path = HeatSeek;
 			sourceTree = "<group>";
@@ -266,8 +282,10 @@
 				760821661B3E869200B57C5D /* Main.storyboard in Resources */,
 				76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */,
 				7608216B1B3E869200B57C5D /* LaunchScreen.xib in Resources */,
+				7632FA6C1B3FFB82006957BB /* checked.png in Resources */,
 				7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */,
 				760821681B3E869200B57C5D /* Images.xcassets in Resources */,
+				7632FA6D1B3FFB82006957BB /* unchecked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +338,13 @@
 			files = (
 				760821631B3E869200B57C5D /* ViewController.m in Sources */,
 				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
+				7632FA691B3FD286006957BB /* User.m in Sources */,
 				76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */,
 				7607D4821B3F95B3002787A6 /* HomeViewController.m in Sources */,
 				76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */,
 				76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */,
 				7608215D1B3E869200B57C5D /* main.m in Sources */,
+				7632FA661B3FC075006957BB /* SendToFriendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
