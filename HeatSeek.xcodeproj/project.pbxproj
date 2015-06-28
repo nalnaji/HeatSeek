@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68F40AC0B743CAAA0148536E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DD7ED0840DE2DB7C3F13A5 /* libPods.a */; };
+		7607D4821B3F95B3002787A6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607D4811B3F95B3002787A6 /* HomeViewController.m */; };
 		7608215D1B3E869200B57C5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7608215C1B3E869200B57C5D /* main.m */; };
 		760821601B3E869200B57C5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7608215F1B3E869200B57C5D /* AppDelegate.m */; };
 		760821631B3E869200B57C5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760821621B3E869200B57C5D /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		598F8A6A83C5313D25B44C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		65C5328EC1C2524E44070623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7607D4801B3F95B3002787A6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7607D4811B3F95B3002787A6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		760821571B3E869200B57C5D /* HeatSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeatSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7608215B1B3E869200B57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7608215C1B3E869200B57C5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				7608215A1B3E869200B57C5D /* Supporting Files */,
 				76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */,
 				76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */,
+				7607D4801B3F95B3002787A6 /* HomeViewController.h */,
+				7607D4811B3F95B3002787A6 /* HomeViewController.m */,
 			);
 			path = HeatSeek;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				760821631B3E869200B57C5D /* ViewController.m in Sources */,
 				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
 				76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */,
+				7607D4821B3F95B3002787A6 /* HomeViewController.m in Sources */,
 				7608215D1B3E869200B57C5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R4j-aK-T14">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -81,12 +82,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="-486"/>
+            <point key="canvasLocation" x="1159" y="140"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="6xr-It-039">
             <objects>
-                <viewController id="tuZ-l5-YYO" sceneMemberID="viewController">
+                <viewController id="tuZ-l5-YYO" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qjs-pw-DOS"/>
                         <viewControllerLayoutGuide type="bottom" id="ETF-KX-s7f"/>
@@ -95,40 +96,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gm1-V3-9CQ">
-                                <rect key="frame" x="16" y="74" width="156" height="164"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Coldest.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gm1-V3-9CQ">
+                                <rect key="frame" x="155" y="86" width="289" height="223"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HEAT SEEK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-fq-7bO">
-                                <rect key="frame" x="49" y="28" width="91" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HEAT SEEK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-fq-7bO">
+                                <rect key="frame" x="255" y="28" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-kz-EG6">
-                                <rect key="frame" x="148" y="24" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-kz-EG6">
+                                <rect key="frame" x="551" y="28" width="42" height="30"/>
                                 <state key="normal" title="TOUR">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-iq-I99">
-                                <rect key="frame" x="71" y="279" width="37" height="30"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-dY-vNY">
-                                <rect key="frame" x="0.0" y="24" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-dY-vNY">
+                                <rect key="frame" x="29" y="28" width="45" height="30"/>
                                 <state key="normal" title="MENU">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedMenuButton:" destination="tuZ-l5-YYO" eventType="touchUpInside" id="QmJ-fD-09U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-iq-I99">
+                                <rect key="frame" x="282" y="362" width="37" height="30"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedPlayButton:" destination="tuZ-l5-YYO" eventType="touchUpInside" id="JNy-L0-Hln"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="playGameSegue" id="XRv-vW-Swk"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="4me-Zv-g6W"/>
+                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="7uh-A1-iXu"/>
+                            <constraint firstItem="Emk-kz-EG6" firstAttribute="trailing" secondItem="2LE-Nd-xD2" secondAttribute="trailingMargin" constant="10" id="GOB-de-47o"/>
+                            <constraint firstAttribute="centerY" secondItem="5hS-iq-I99" secondAttribute="centerY" id="HAA-iX-CEm"/>
+                            <constraint firstAttribute="centerY" secondItem="5hS-iq-I99" secondAttribute="centerY" id="M5u-Xg-Vs9"/>
+                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="UTd-u4-pcS"/>
+                            <constraint firstItem="vgF-dY-vNY" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="4" id="XKq-3v-AtM"/>
+                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="Y05-gb-P0g"/>
+                            <constraint firstAttribute="centerX" secondItem="Gm1-V3-9CQ" secondAttribute="centerX" id="ay1-Nq-IIh"/>
+                            <constraint firstItem="vgF-dY-vNY" firstAttribute="leading" secondItem="2LE-Nd-xD2" secondAttribute="leadingMargin" constant="10" id="bgd-UX-90E"/>
+                            <constraint firstItem="vgF-dY-vNY" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="10" id="chJ-fs-JaU"/>
+                            <constraint firstAttribute="centerX" secondItem="5hS-iq-I99" secondAttribute="centerX" id="gqc-fk-ITM"/>
+                            <constraint firstAttribute="centerX" secondItem="DhC-fq-7bO" secondAttribute="centerX" id="kFc-m3-Js7"/>
+                            <constraint firstItem="Emk-kz-EG6" firstAttribute="top" secondItem="qjs-pw-DOS" secondAttribute="bottom" constant="10" id="xFB-GB-hFS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeImageView" destination="Gm1-V3-9CQ" id="a6P-jQ-84m"/>
+                        <outlet property="menuButton" destination="vgF-dY-vNY" id="New-UN-c80"/>
+                        <outlet property="playButton" destination="5hS-iq-I99" id="TBD-t1-Mfk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fks-JA-gkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="451" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Coldest.jpg" width="360" height="270"/>
+    </resources>
 </document>
