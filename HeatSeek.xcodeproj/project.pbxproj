@@ -21,6 +21,8 @@
 		7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */; };
 		7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */; };
 		76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */; };
+		76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1351B3F9F24007307BD /* SnapViewController.m */; };
+		76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */; };
 		76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,10 @@
 		7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
 		76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
 		76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
+		76D2D1341B3F9F24007307BD /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapViewController.h; sourceTree = "<group>"; };
+		76D2D1351B3F9F24007307BD /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapViewController.m; sourceTree = "<group>"; };
+		76D2D1371B3FA31B007307BD /* ConfirmImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmImageViewController.h; sourceTree = "<group>"; };
+		76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmImageViewController.m; sourceTree = "<group>"; };
 		76DD7ED0840DE2DB7C3F13A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = HeatSeek/sampleframes_hq.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,10 @@
 				76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */,
 				7607D4801B3F95B3002787A6 /* HomeViewController.h */,
 				7607D4811B3F95B3002787A6 /* HomeViewController.m */,
+				76D2D1341B3F9F24007307BD /* SnapViewController.h */,
+				76D2D1351B3F9F24007307BD /* SnapViewController.m */,
+				76D2D1371B3FA31B007307BD /* ConfirmImageViewController.h */,
+				76D2D1381B3FA31B007307BD /* ConfirmImageViewController.m */,
 			);
 			path = HeatSeek;
 			sourceTree = "<group>";
@@ -312,6 +322,8 @@
 				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
 				76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */,
 				7607D4821B3F95B3002787A6 /* HomeViewController.m in Sources */,
+				76D2D1361B3F9F24007307BD /* SnapViewController.m in Sources */,
+				76D2D1391B3FA31B007307BD /* ConfirmImageViewController.m in Sources */,
 				7608215D1B3E869200B57C5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

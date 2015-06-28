@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-298" y="140"/>
         </scene>
-        <!--View Controller-->
+        <!--Snap View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SnapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,17 +45,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yL3-he-HU5">
-                                <rect key="frame" x="0.0" y="0.0" width="231" height="297"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yL3-he-HU5">
+                                <rect key="frame" x="225" y="75" width="150" height="168"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-bc-CJU">
-                                <rect key="frame" x="0.0" y="295" width="231" height="297"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-Iv-qBG">
-                                <rect key="frame" x="233" y="0.0" width="140" height="189"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plg-4n-0aE">
-                                <rect key="frame" x="268" y="252" width="70" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plg-4n-0aE">
+                                <rect key="frame" x="265" y="311" width="70" height="30"/>
                                 <state key="normal" title="Take Pic :)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,26 +57,91 @@
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEZ-6y-bew"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-aP-6QS">
-                                <rect key="frame" x="282" y="206" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-aP-6QS">
+                                <rect key="frame" x="279" y="282" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaS-eR-tBA">
+                                <rect key="frame" x="179" y="20" width="39" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="plg-4n-0aE" secondAttribute="centerX" id="Ofg-Pb-7yH"/>
+                            <constraint firstAttribute="centerX" secondItem="yL3-he-HU5" secondAttribute="centerX" id="coC-5D-bXa"/>
+                            <constraint firstAttribute="centerX" secondItem="bfy-aP-6QS" secondAttribute="centerX" id="xIT-78-wai"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="capturePhotoButton" destination="plg-4n-0aE" id="jCv-rK-Yly"/>
-                        <outlet property="photoView" destination="lwq-Iv-qBG" id="Wxk-Xa-byE"/>
                         <outlet property="tempLabel" destination="bfy-aP-6QS" id="tb8-Rs-Kqb"/>
                         <outlet property="thermalImageView" destination="yL3-he-HU5" id="jC5-8r-QLR"/>
-                        <outlet property="visualImageView" destination="YSQ-bc-CJU" id="Lwh-PN-gMu"/>
+                        <segue destination="EXi-09-2tv" kind="show" identifier="confirmImageSegue" id="lca-Kt-92A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="140"/>
+            <point key="canvasLocation" x="1201" y="132"/>
+        </scene>
+        <!--Confirm Image View Controller-->
+        <scene sceneID="Z3U-cR-dzL">
+            <objects>
+                <viewController id="EXi-09-2tv" customClass="ConfirmImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZEe-HD-rkj"/>
+                        <viewControllerLayoutGuide type="bottom" id="yPi-c3-Tp8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9A-ni-l3s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBG-qi-5XJ">
+                                <rect key="frame" x="164" y="102" width="277" height="192"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-2x-qlv">
+                                <rect key="frame" x="277" y="326" width="48" height="30"/>
+                                <state key="normal" title="Retake">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retakeButtonClicked:" destination="EXi-09-2tv" eventType="touchUpInside" id="N2f-uk-eeO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43J-JN-sEa">
+                                <rect key="frame" x="269" y="383" width="62" height="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXg-yG-0L8">
+                                <rect key="frame" x="75" y="40" width="39" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pBG-qi-5XJ" secondAttribute="centerX" id="11X-B7-F3f"/>
+                            <constraint firstAttribute="centerX" secondItem="uQU-2x-qlv" secondAttribute="centerX" id="Mrc-2H-63F"/>
+                            <constraint firstAttribute="centerX" secondItem="43J-JN-sEa" secondAttribute="centerX" id="fjd-9N-FEd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="43J-JN-sEa" id="Rbu-ii-7ae"/>
+                        <outlet property="imageView" destination="pBG-qi-5XJ" id="jeL-og-hnY"/>
+                        <outlet property="retakeButton" destination="uQU-2x-qlv" id="0Jw-Yq-kQr"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="retakeSegue" id="2Z4-fR-8n7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp0-dL-IBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="140"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="6xr-It-039">
@@ -163,4 +222,7 @@
     <resources>
         <image name="Coldest.jpg" width="360" height="270"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Z4-fR-8n7"/>
+    </inferredMetricsTieBreakers>
 </document>
