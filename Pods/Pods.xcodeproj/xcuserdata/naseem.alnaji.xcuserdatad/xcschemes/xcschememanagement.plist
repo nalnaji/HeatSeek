@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ObjectiveSugar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>142D07492C51A619B74FF65A</key>
+		<key>187E9EE3A83864349797AAB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E3503D2B8EDAEDB43477A04</key>
+		<key>4A296E2888F2C7FB3B655002</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92A9082A10701E89C633B5B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B04DC9CF0A1E61AA7A9EDE7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9BC15303F3869E53FB736AFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC5C664D8F6F2AE24C797EC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

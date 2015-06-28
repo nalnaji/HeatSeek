@@ -7,8 +7,11 @@
 //
 #import <FLIROneSDK/FLIROneSDKSimulation.h>
 #import <FLIROneSDK/FLIROneSDKUIImage.h>
-
 #import <FLIROneSDK/FLIROneSDKLibraryViewController.h>
+
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 
 #import <AVFoundation/AVFoundation.h>
 

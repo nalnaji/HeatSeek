@@ -2,12 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UISupportedExternalAccessoryProtocols</key>
+	<key>CFBundleURLTypes</key>
 	<array>
-		<string>com.FLIR.rosebud.config</string>
-		<string>com.FLIR.rosebud.frame</string>
-		<string>com.FLIR.rosebud.fileio</string>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb693776184060629</string>
+			</array>
+		</dict>
 	</array>
+	<key>FacebookDisplayName</key>
+	<string>HeatSeek</string>
+	<key>FacebookAppID</key>
+	<string>693776184060629</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -35,6 +44,12 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.FLIR.rosebud.config</string>
+		<string>com.FLIR.rosebud.frame</string>
+		<string>com.FLIR.rosebud.fileio</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

@@ -19,6 +19,7 @@
 		7613A6AE1B3E9589005DBCD8 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */; };
 		7613A6AF1B3E9589005DBCD8 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */; };
 		7613A6B01B3E9592005DBCD8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7613A6A81B3E94FC005DBCD8 /* Accelerate.framework */; };
+		76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */; };
 		76F606821B3F246D00D41F55 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		7613A6AA1B3E950B005DBCD8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		7613A6AC1B3E9589005DBCD8 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
 		7613A6AD1B3E9589005DBCD8 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
+		76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
+		76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
 		76DD7ED0840DE2DB7C3F13A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F606811B3F246D00D41F55 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = HeatSeek/sampleframes_hq.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +113,8 @@
 				760821671B3E869200B57C5D /* Images.xcassets */,
 				760821691B3E869200B57C5D /* LaunchScreen.xib */,
 				7608215A1B3E869200B57C5D /* Supporting Files */,
+				76AEC38B1B3F8B33003ABA5C /* FBLoginViewController.h */,
+				76AEC38C1B3F8B33003ABA5C /* FBLoginViewController.m */,
 			);
 			path = HeatSeek;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			files = (
 				760821631B3E869200B57C5D /* ViewController.m in Sources */,
 				760821601B3E869200B57C5D /* AppDelegate.m in Sources */,
+				76AEC38D1B3F8B33003ABA5C /* FBLoginViewController.m in Sources */,
 				7608215D1B3E869200B57C5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
